@@ -1,6 +1,8 @@
 name: Events Demo 1
 
 on:
+  workflow_dispatch:
+
   pull_request:
     types:
       - opened
@@ -8,8 +10,6 @@ on:
       - main
       - dev-*
       - feat/**
-
-  workflow_dispatch:
 
   push:
     branches:
